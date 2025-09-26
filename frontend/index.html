@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Management</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Customer Management System</h1>
+      </header>
+      <main>
+        <div id="customer-form" class="form-container">
+          <h2 id="form-title">Add New Customer</h2>
+          <form id="customer-form-element">
+            <input type="hidden" id="customer-id" />
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes:</label>
+              <textarea id="notes" name="notes" rows="3"></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="submit" id="submit-btn">Add Customer</button>
+              <button type="button" id="cancel-btn" style="display: none;">Cancel</button>
+            </div>
+          </form>
+        </div>
+        
+        <div id="customer-list" class="list-container">
+          <h2>Customers</h2>
+          <div id="customers-grid"></div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
