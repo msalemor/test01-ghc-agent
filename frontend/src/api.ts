@@ -1,4 +1,4 @@
-import { Customer, CustomerCreate, CustomerUpdate } from './types';
+import type { Customer, CustomerCreate, CustomerUpdate } from './types';
 
 const API_BASE_URL = 'http://localhost:8000';
 

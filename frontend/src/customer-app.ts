@@ -1,4 +1,4 @@
-import { Customer, CustomerCreate, CustomerUpdate } from './types';
+import type { Customer, CustomerCreate, CustomerUpdate } from './types';
 import { CustomerAPI } from './api';
 
 export class CustomerApp {
@@ -114,7 +114,7 @@ export class CustomerApp {
     });
   }
 
-  private showEditForm(customerId: string) {
+  showEditForm(customerId: string) {
     const customer = this.customers.find(c => c.id === customerId);
     if (!customer) return;
 
